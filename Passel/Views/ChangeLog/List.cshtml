@@ -1,0 +1,23 @@
+@model ChangeLogViewModel
+<h1>Change Log</h1>
+<div class="change-log-container">
+	@foreach (Change change in Model.Changes)
+	{
+		<div class="change-log-entry">
+			<div class="card">
+				<div class="card-header">
+					<span class="change-log-entry-date">@change.ChangeAuthor</span>
+					<span
+					class="change-log-entry-author">@change.ChangeDate</span>
+				</div>
+				<div class="card-body">
+					<div class="change-log-entry-body">
+						@change.ChangeDescription
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	}
+</div>

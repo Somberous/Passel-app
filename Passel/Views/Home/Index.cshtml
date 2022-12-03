@@ -1,13 +1,41 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Passel Main Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Hello World, Welcome to Passel!</h1>
-    <br />
-    <h2>Your single pain of glass to consume media!</h2>
-    <br />
-    <p>This site is in its infancy and will be recieving regular updates of functionality, thank you for your patience!</p>
-    <img src="~/images/under_construction.png" alt="Under Construction"
-         title="Under Construction" />
+<div class="container-fluid">
+    <div class="col-lg-10">
+        <div class="card mt-3 mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Welcome to Passel</h5>
+                <p class="card-text">
+                    Passel is a powerful and user-friendly app that helps you
+                    manage your various media feeds through a single pane of
+                    glass.
+                </p>
+                <p class="card-text">
+                    Currently, the app does not have the ability to connect to
+                    external content providers, however, this will be where they
+                    are displayed
+                    when the feature is implemented.
+                </p>
+                <p class="card-text">
+                    Start by clicking on the "Change Log" link at the top to
+                    view the development process.
+                </p>
+                <p class="card-text">
+                    You can also click on the other links but they are still
+                    under construction.
+                </p>
+                <p class="card-text">
+                    Have fun with Passel!
+                </p>
+                <p class="card-text">
+                    <a href="https://github.com/Somberous/Passel"
+                        target="_blank">Check us out on GitHub</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

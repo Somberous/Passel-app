@@ -1,0 +1,19 @@
+@model Account
+@{
+ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+	@Html.ValidationSummary()
+<form method="post" action="/Account/Login">
+    <label for="Email">Email</label>
+    <input type="email" id="Email" name="Email" />
+
+	<label for="Password">Password</label>
+	<input type="password" id="Password" name="Password" />
+
+	<input type="submit" value="Login" />
+
+<button type="submit">Login</button>
+
+</form>
